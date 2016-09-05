@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Lottery</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="holder">
+			<span id="winners">Winners:</span>
+			<button class="btn" id="new-winner">New Winner</button>
+		</div>
+		<div class="form-holder">
+			<form id="registration-form">
+				<h1>Registration form</h1>
+
+				<div class="form-group">	
+					<label>Name:</label>
+					<input class="form-control" type="text" name="name" id="name"></input>
+				</div>
+				<div class="form-group">
+					<label>Surname:</label>
+					<input class="form-control" type="text" name="surname" id="surname"></input>
+				</div>
+				<div class="form-group">
+					<label>E-mail:</label>
+					<input class="form-control" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+				</div>
+				<div class="form-group">
+					<label>Phone:</label>
+					<input class="form-control" type="tel" name="phone" id="phone"></input>
+				</div>
+			</form>
+			<button class="btn" id="save-info">Save</button>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Surname</td>
+					<td>Email</td>
+					<td>Phone</td>
+				</tr>
+			</thead>
+			<tbody id="participants">
+			
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
